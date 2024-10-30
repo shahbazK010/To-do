@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* index.css */
+body.dark {
+  background-color: #1a202c;
+  color: #f7fafc;
+}
+@layer components {
+  .priority-low {
+    @apply border-green-500 dark:border-green-400;
+  }
+  .priority-medium {
+    @apply border-yellow-500 dark:border-yellow-400;
+  }
+  .priority-high {
+    @apply border-red-500 dark:border-red-400;
+  }
+}
